@@ -1,11 +1,21 @@
-import { Container } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 export const Footer = () => {
+  const date = new Date()
+  const year = date.getFullYear()
+
   return (
-    <Container width="100%">
-      <h2>{'Footer'}</h2>
-      <p>{'Find me in ./web/src/components/Footer/Footer.js'}</p>
-    </Container>
+    <footer>
+      <Box
+        alignItems="center"
+        display="flex"
+        height="10vh"
+        justifyContent="center"
+        maxWidth="xl"
+      >
+        <p>&copy; {year}</p>
+      </Box>
+    </footer>
   )
 }
 

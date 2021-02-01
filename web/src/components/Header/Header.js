@@ -18,9 +18,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  drawer: {
-    color: 'black',
-  },
 }))
 
 export const Header = () => {
@@ -39,8 +36,8 @@ export const Header = () => {
   }
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <header className={classes.root}>
+      <AppBar position="sticky">
         <Toolbar>
           <IconButton
             edge="start"
@@ -57,10 +54,10 @@ export const Header = () => {
           <Button color="inherit">Login</Button>
         </Toolbar>
         <Drawer anchor={'left'} open={menuOpen} onClose={toggleDrawer()}>
-          <p className={classes.drawer}>Hello World</p>
+          <p>Hello World</p>
         </Drawer>
       </AppBar>
-    </div>
+    </header>
   )
 }
 

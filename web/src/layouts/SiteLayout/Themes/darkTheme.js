@@ -7,7 +7,7 @@ export const darkTheme = createMuiTheme({
       white: '#fff',
     },
     background: {
-      paper: '#fff',
+      paper: '#636e72',
       default: '#2d3436',
     },
     primary: {
