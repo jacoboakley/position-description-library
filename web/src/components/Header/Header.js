@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  appBar: {
+    display: 'flex',
+    justifyContent: 'center',
+    height: '10vh',
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -37,7 +42,7 @@ export const Header = () => {
 
   return (
     <header className={classes.root}>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className={classes.appBar}>
         <Toolbar>
           <IconButton
             edge="start"

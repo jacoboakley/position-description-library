@@ -22,7 +22,7 @@ export const SiteLayout = ({ children }) => {
       <CssBaseline />
       <Box minHeight="100vh" width="100vw">
         <Header />
-        <main>{children}</main>
+        <main style={{ minHeight: '80vh' }}>{children}</main>
         <Footer />
       </Box>
     </ThemeProvider>
